@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main
 {
 public static void main (String[] args)
@@ -6,8 +7,11 @@ public static void main (String[] args)
     ayy.shuffle();
     ayy.getCards();
     JohnnyGUI myGUI = new JohnnyGUI();
-System.out.print("hi");
     myGUI.setVisible(true);
+    System.out.println("Wassup doug welcome to the 24 game! Please enter your name:");
+    Scanner johnny = new Scanner(System.in);
+    String yeet = johnny.next();
+    System.out.println("W");
 }
 
 }
