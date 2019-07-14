@@ -40,6 +40,8 @@ public class Main {
             System.out.println(hand.get(i).getName()); // get the card and then get the name of the card
         }
     }
+
+    // // make isValid class, just repeat of AI that runs hands instantly to see if it's possible to make 24
 }
 
 
