@@ -1,7 +1,8 @@
 Rules:
-Both players (you and the CPU) are randomly dealt 4 cards
-You (the player) try to make the number 24 by combining the numbers of the cards you received
+Both players (you and the CPU) are randomly dealt 4 cards, each from a different deck
+You (the player) try to make the number 24 by combining the numbers of the cards you received. All cards must be used
 Special numbers: Ace = 1, Jacks = 11, Queens = 12, Kings = 13
 You may use only the 4 basic mathematical operations to reach 24: addition, subtraction, multiplication & division
 Cards cannot be used twice
-Mathematical operation has to be valid (no dividing by zero,
+Mathematical operation has to be valid (no dividing by zero, etc.)
+If you make 24 quicker than the computer, you receive a point, and vice versa
