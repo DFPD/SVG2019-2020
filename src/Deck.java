@@ -5,9 +5,10 @@ public class Deck
     public Deck()
     {
         int pointer = 0; // marks where in the array of cards we at
-        for(int i = 1; i < 5; i++)
+        for(int i = 1; i < 5; i++) // outer for loop goes through and makes suits of cards
         {
-            for(int j = 1; j < 14; j++)
+            for(int j = 1; j < 14; j++) // inner for loop goes through suits and adds ranks of cards
+                // makes them and adds them to deck
             {
                 cards[pointer] = new Card(i , j);
                 pointer++;
@@ -15,7 +16,7 @@ public class Deck
         }
     }
 
-    public void getCards()
+    public void getCards() // prints out the cards name
     {
         for(int i = 0; i < cards.length; i++)
             System.out.println(cards[i].getName());
@@ -33,5 +34,12 @@ public class Deck
             }
         }
     }
+
+    public void deal() // deals a set of 4 cards to you and the opponent
+// removes the 4 cards from the deck
+    {
+
+    }
+
 
 }

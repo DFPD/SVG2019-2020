@@ -1,9 +1,9 @@
 public class Card {
-    private int suit;//1.Hearts,2.diamonds3.spades4.clubs
+    private int suit;// 1.Hearts, 2.diamonds, 3.spades, 4.clubs
     private int value;
     private String name;
 
-    public Card(int suit, int value) {
+    public Card(int suit, int value) { // constructor
         this.suit = suit;
         this.value = value;
         name = setName();
@@ -22,8 +22,8 @@ public class Card {
     }
 
     public String setName(){
-        String s = "";
-        String v = "";
+        String s = ""; // for suits
+        String v = ""; // for ranks
         if (suit == 1){
              s = "Hearts";
         }
