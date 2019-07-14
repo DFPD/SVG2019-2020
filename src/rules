@@ -1,5 +1,5 @@
 Rules:
-Two players (you and either a CPU or another player) are randomly dealt the same 4 cards, each from a different deck
+Two players (you and either a CPU or another player) are randomly dealt the same 4 cards
 You (the player) try to make the number 24 by combining the numbers of the cards you received. All cards must be used
 You compete against the computer to see who makes 24 faster, think fast!
 If it is impossible to make 24, the cards are reinserted into the deck, shuffled, and redrawn
