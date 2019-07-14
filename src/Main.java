@@ -1,9 +1,12 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 public class Main
 {
 public static void main (String[] args)
 {
     Deck ayy = new Deck(); // your personal deck
+    ArrayList<Card> playerHand = new ArrayList<Card>(0);
+    ArrayList<Card> enemyHand = new ArrayList<Card>(0);
     ayy.shuffle();
     ayy.getCards(); // prints out the cards, will be in GUI form
     JohnnyGUI myGUI = new JohnnyGUI();
@@ -21,6 +24,11 @@ public static void main (String[] args)
      */
 }
 // 7/13 need to make sure player does not duplicate cards in operation
+public void draw(ArrayList<Card> hand,Deck ay){
+    for(int i = 0; i <4;i++){
+        hand.add(ay.deal());
+    }
+}
 
 }
 

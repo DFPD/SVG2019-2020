@@ -34,4 +34,8 @@ public class Deck
         }
     }
 
+    public Card deal(){
+        return cards.remove(0);
+    }
+
 }
