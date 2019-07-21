@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class AIclass
 {
     private int timeConstraint;
@@ -17,7 +19,7 @@ public class AIclass
         } else return false;
     }
 
-    public void calculate() {
+    public void calculate(ArrayList<Card> Hand) {
         boolean works = false;
         int firstNum;
         int secondNum;
@@ -25,7 +27,7 @@ public class AIclass
         while (works != true) {
             for (int i = 0; i < 4; i++) // goes through first 4 cards
             {
-                ayy.get(i).getValue();
+                Hand.get(i).getValue();
                 for (int j = 0; j < 3; j++) // operates them in addition
                 {
 
