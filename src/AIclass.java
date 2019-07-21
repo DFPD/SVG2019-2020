@@ -19,9 +19,35 @@ public class AIclass {
     }
 
     public String calculate(ArrayList<Card> Hand) {
-        int tempHand; // first number you take out of the hand
-        int tempHand2; // number you create after first combo (3 values left)
-        int tempHand3; // number created after second combo (2 values left)
+        Card[][] hands = new Card[][]{
+                {Hand.get(0),Hand.get(1),Hand.get(2),Hand.get(3)},//1
+                {Hand.get(1),Hand.get(0),Hand.get(2),Hand.get(3)},//2
+                {Hand.get(2),Hand.get(1),Hand.get(0),Hand.get(3)},//3
+                {Hand.get(0),Hand.get(2),Hand.get(1),Hand.get(3)},//4
+                {Hand.get(1),Hand.get(2),Hand.get(0),Hand.get(3)},//5
+                {Hand.get(2),Hand.get(1),Hand.get(0),Hand.get(3)},//6
+                {Hand.get(2),Hand.get(1),Hand.get(3),Hand.get(0)},//7
+                {Hand.get(1),Hand.get(2),Hand.get(3),Hand.get(0)},//8
+                {Hand.get(3),Hand.get(2),Hand.get(1),Hand.get(0)},//9
+                {Hand.get(2),Hand.get(3),Hand.get(1),Hand.get(0)},//10
+                {Hand.get(1),Hand.get(3),Hand.get(2),Hand.get(0)},//11
+                {Hand.get(3),Hand.get(1),Hand.get(2),Hand.get(0)},//12
+                {Hand.get(3),Hand.get(0),Hand.get(2),Hand.get(1)},//13
+                {Hand.get(0),Hand.get(3),Hand.get(2),Hand.get(1)},//14
+                {Hand.get(2),Hand.get(3),Hand.get(0),Hand.get(1)},//15
+                {Hand.get(3),Hand.get(2),Hand.get(0),Hand.get(1)},//16
+                {Hand.get(0),Hand.get(2),Hand.get(3),Hand.get(1)},//17
+                {Hand.get(2),Hand.get(0),Hand.get(3),Hand.get(1)},//18
+                {Hand.get(1),Hand.get(0),Hand.get(3),Hand.get(2)},//19
+                {Hand.get(0),Hand.get(1),Hand.get(3),Hand.get(2)},//20
+                {Hand.get(3),Hand.get(1),Hand.get(0),Hand.get(2)},//21
+                {Hand.get(1),Hand.get(3),Hand.get(0),Hand.get(2)},//22
+                {Hand.get(0),Hand.get(3),Hand.get(1),Hand.get(2)},//23
+                {Hand.get(3),Hand.get(0),Hand.get(1),Hand.get(2)},//24
+
+
+
+        };
         int firstNum;
         int secondNum;
         int thirdNum; // combines these numbers to make 24
