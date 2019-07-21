@@ -4,19 +4,17 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
         Deck ayy = new Deck(); // your personal deck
-        ArrayList<Card> playerHand = new ArrayList<Card>(0);
-        ArrayList<Card> enemyHand = new ArrayList<Card>(0);
+        ArrayList<Card> Hand = new ArrayList<Card>(0); // one hand for both
+
         ayy.shuffle();
         ayy.getCards(); // prints out the cards, will be in GUI form
-        JohnnyGUI myGUI = new JohnnyGUI();
+        JohnnyGUI myGUI = new JohnnyGUI(); // our GUI
         myGUI.setVisible(true);
-        draw(playerHand, ayy);
-        draw(enemyHand, ayy);
-        System.out.println("Your hand:");
-        getHand(playerHand);
+        draw(Hand, ayy);
 
-        System.out.println("Computers' hand: ");
-        getHand(enemyHand);
+        System.out.println("Your hand:");
+        getHand(Hand); // prints out yo hand
+
         System.out.println("The rest of the deck: ");
         ayy.getCards();
         System.out.println("Wassup doug welcome to the 24 game! Please enter your name: ");
